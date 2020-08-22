@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+      <!-- CSS -->
+      <link rel="stylesheet" type="text/css" href="CSS/style.css">
+
+      <!-- JavaScript -->
+      <script src="JavaScript/programacao.js"></script>
+
+      <title>Calculadora</title>
+   </head>
+
+   <body onkeypress="executaFuncao(event);">
+      <!-- Título -->
+      <div class="container">
+         <div class="titulo">
+            <p>Calculadora JavaScript</p>
+         </div>
+               <br><hr>
+      </div>
+          
+      <!-- Calculadora -->
+      <div class="container">
+         <div class="row">
+            <!-- Parte esquerda / primeiro valor -->
+            <div class="col-md-4 formsPadding">
+               <form class="form-group">
+                  <input id="valor1" type="text" class="form-control" placeholder="Digite o primeiro valor...">
+               </form>
+            </div>
+
+            <!-- Parte central / tipo de conta -->
+            <div class="col-md-4 formsPadding">
+               <select id="operacoes" class="form-control">
+                  <option value="">--Selecione uma operação--</option>
+                  <option value="1">Adição</option>
+                  <option value="2">Subtração</option>
+                  <option value="3">Multiplicação</option>
+                  <option value="4">Divisão</option>
+               </select>
+            </div>
+
+            <!-- Parte direita / segundo valor -->
+            <div class="col-md-4 formsPadding">
+               <form class="form-group">
+                  <input id="valor2" type="text" class="form-control" placeholder="Digite o segundo valor...">
+               </form>
+            </div>
+         </div>
+
+               <hr>
+         <button id="calcular" class="btn btn-primary buttonStyle" onclick="conta();">Calcular</button>
+               <br><br><hr class="hrStyle">
+
+         <form class="form-group">
+            <input id="resultadoFinal" type="text"  class="form-control readonlyClass" placeholder="Resultado:" readonly>
+         </form>
+               <hr>
+
+      </div>
+
+    
+   </body>
+
+</html>

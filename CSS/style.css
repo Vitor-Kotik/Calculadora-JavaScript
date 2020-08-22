@@ -1,0 +1,33 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+.titulo {
+	background: #D8D8D8;
+	width: 100%
+}
+.titulo p {
+	font-size: 40px;
+	font-weight: bold;
+	padding: 30px 0 20px 30px;
+	font-family: 'Verdana';
+	letter-spacing: 1px;
+}
+
+.buttonStyle {
+	float: right;
+	margin-top: 20px;
+}
+.hrStyle {
+	margin-top: 45px;
+}
+
+.formsPadding {
+	padding-top: 10px;
+
+}
+
+form .readonlyClass {
+	margin: 50px 0;
+}
